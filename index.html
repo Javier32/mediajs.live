@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Player Example</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="player-wrapper">
+		<audio id="audio-player">
+			<source src="audio.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+		<div id="controls">
+			<button id="play-pause-button"><img src="play.svg" alt="Play"></button>
+			<input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+			<div id="time-container">
+				<span id="current-time">0:00</span> / <span id="duration">0:00</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="player.js"></script>
+</body>
+</html>
